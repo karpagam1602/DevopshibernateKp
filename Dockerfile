@@ -1,5 +1,5 @@
 FROM openjdk:17
 WORKDIR /app
-COPY ${JAR_FILE} app.jar
+COPY ${JAR_FILE} app.war
 EXPOSE 8084
-CMD ["java", "-jar", "DevopsJenkinsDemo-0.0.1-SNAPSHOT"]
+CMD ["java", "-war", "MVC_WebApp"]
